@@ -2,7 +2,7 @@
 def countingSort(arr):
     res = []
     s_res = ''
-    lst = [0] * 100
+    lst = [0] * len(arr) * 100
     for i in arr:
         if i in arr: lst[i] += 1
     for i in range(len(lst)):

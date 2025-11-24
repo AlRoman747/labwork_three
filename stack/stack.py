@@ -1,5 +1,5 @@
 class Stack:
-    def __int__(self):
+    def __init__(self):
         self.data = []
         self.mins = []
 
@@ -27,3 +27,13 @@ class Stack:
     def __len__(self) -> int:
         return len(self.data)
 
+s = Stack()
+
+s.push(3)
+s.push(5)
+s.push(7)
+
+print(s.peek())
+
+s.pop()
+print(s.peek())
