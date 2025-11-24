@@ -1,4 +1,3 @@
-import pytest
 import sys
 import os
 
@@ -66,5 +65,5 @@ def test_radixSort():
 def test_heapSort():
     """Тест для heapSort"""
     arr = rand_int_array(10, 1, 20, distinct=True, seed=748)
-    result = radixSort(arr.copy())
+    result = heap_sort(arr.copy())
     assert result == sorted(arr)
