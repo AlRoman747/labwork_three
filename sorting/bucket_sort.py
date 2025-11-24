@@ -1,5 +1,5 @@
 from sorting.quicksort import quickSort
-
+from tests.rand_generate import rand_int_array
 def bucketSort(arr):
     buckets = [[] for _ in range(10)]
     res = []
@@ -21,4 +21,7 @@ def bucketSort(arr):
     return res
 
 if __name__ == "__main__":
-    print(bucketSort([10, 7, 8, 9, 1, 5]))
+    n = 1000
+    lst = rand_int_array(n, 1, 99, seed=748)
+    print(bucketSort(lst))
+    print(sorted(lst))

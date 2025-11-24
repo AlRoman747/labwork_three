@@ -13,4 +13,3 @@ def bouble_sort(nums: List):
 
 
 
-print(bouble_sort(List))

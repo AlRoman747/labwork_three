@@ -13,6 +13,5 @@ def radixSort(arr):
     return arr
 
 
-print(radixSort([137137105157, 24395739293, 474290561035, 5, 276, 42]))
 
 

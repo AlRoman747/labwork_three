@@ -5,4 +5,4 @@ def fibonacci(n1, n2, m, c):
             return res
         return fibonacci(n2, res, m, c)
 
-print(fibonacci(1,1,int(input()),2))
+# print(fibonacci(1,1,12,0))

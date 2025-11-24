@@ -4,7 +4,5 @@ def quickSort(arr):
     left, middle, right = [x for x in arr if x < pivot], [x for x in arr if x == pivot], [x for x in arr if x > pivot]
     return quickSort(left) + middle + quickSort(right)
 
-sorted_list = quickSort([10, 7, 8, 9, 1, 5])
 
-if __name__ == "__main__":
-    print(quickSort([3, 2, 1]))
+# print(quickSort([1,2,4,3,5]))

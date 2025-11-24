@@ -4,4 +4,3 @@ def factorial(n: int):
     return n * factorial(n - 1)
 
 
-print(factorial(5))

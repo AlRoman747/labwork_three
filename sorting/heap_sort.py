@@ -16,7 +16,7 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]  # Меняем местами
         heapify(arr, n, largest)  # Рекурсивно преобразуем затронутое поддерево
 
-def heap_sort(a: list[int]) -> list[int]:
+def heapSort(a: list[int]) -> list[int]:
     n = len(a)
     # Построение максимальной кучи
     # Начинаем с последнего нелистового узла и идем до корня
@@ -33,4 +33,3 @@ def heap_sort(a: list[int]) -> list[int]:
     return a
 
 
-print(heap_sort([10, 7, 8, 9, 1, 5, 8, 6]))
